@@ -1,0 +1,685 @@
+<mxfile host="app.diagrams.net" modified="2023-04-03T02:02:35.001Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.54" etag="zBdPhg8Wb_EaoqdqLQG3" version="21.1.2" type="device" pages="2">
+  <diagram id="Da-osiFDCDOtsJ7MdUAY" name="クラス図">
+    <mxGraphModel dx="880" dy="484" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GNxP4Rq1OhnhySqF_HCn-17" value="羽根" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="688" y="157" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="GNxP4Rq1OhnhySqF_HCn-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="GNxP4Rq1OhnhySqF_HCn-17" vertex="1">
+          <mxGeometry y="26" width="200" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="GNxP4Rq1OhnhySqF_HCn-20" value="～羽根の操作をする（byte）：void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GNxP4Rq1OhnhySqF_HCn-17" vertex="1">
+          <mxGeometry y="60" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5kG-spY-I7t3I65sGGEA-6" value="" style="endArrow=block;endFill=0;endSize=24;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="440" y="320" as="sourcePoint" />
+            <mxPoint x="439.58" y="226" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nmrd6tZjVNv58GOkw1EU-1" value="電源" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="11" y="360" width="270" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="aP3Cfx8HfI20d9rnEFOV-4" value="" style="endArrow=none;endFill=0;endSize=24;html=1;rounded=0;" parent="nmrd6tZjVNv58GOkw1EU-1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="149" as="sourcePoint" />
+            <mxPoint x="149" y="-40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nmrd6tZjVNv58GOkw1EU-2" value="-電源SW状態：boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="nmrd6tZjVNv58GOkw1EU-1" vertex="1">
+          <mxGeometry y="26" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="nmrd6tZjVNv58GOkw1EU-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="nmrd6tZjVNv58GOkw1EU-1" vertex="1">
+          <mxGeometry y="52" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="nmrd6tZjVNv58GOkw1EU-4" value="+電源SW状態セット(boolean)：void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+電源SW状態ゲット()：boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="nmrd6tZjVNv58GOkw1EU-1" vertex="1">
+          <mxGeometry y="60" width="270" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nmrd6tZjVNv58GOkw1EU-5" value="風量" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="312" y="360" width="270" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="nmrd6tZjVNv58GOkw1EU-6" value="-風量SW状態：byte" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="nmrd6tZjVNv58GOkw1EU-5" vertex="1">
+          <mxGeometry y="26" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="nmrd6tZjVNv58GOkw1EU-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="nmrd6tZjVNv58GOkw1EU-5" vertex="1">
+          <mxGeometry y="52" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="nmrd6tZjVNv58GOkw1EU-8" value="+風量SW状態セット(byte)：void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+風量SW状態ゲット()：byte" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="nmrd6tZjVNv58GOkw1EU-5" vertex="1">
+          <mxGeometry y="60" width="270" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nmrd6tZjVNv58GOkw1EU-13" value="タイマー&lt;br&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="608" y="360" width="310" height="138" as="geometry" />
+        </mxCell>
+        <mxCell id="nmrd6tZjVNv58GOkw1EU-14" value="-タイマーSW状態：byte&lt;br&gt;-タイマー時間：byte&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;-残り時間:int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="nmrd6tZjVNv58GOkw1EU-13" vertex="1">
+          <mxGeometry y="26" width="310" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="nmrd6tZjVNv58GOkw1EU-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="nmrd6tZjVNv58GOkw1EU-13" vertex="1">
+          <mxGeometry y="80" width="310" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="nmrd6tZjVNv58GOkw1EU-16" value="+タイマーSW状態セット(byte)：void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+タイマーSW状態ゲット()：byte&lt;br&gt;+タイマー設定():void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="nmrd6tZjVNv58GOkw1EU-13" vertex="1">
+          <mxGeometry y="88" width="310" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nmrd6tZjVNv58GOkw1EU-17" value="" style="endArrow=none;html=1;rounded=0;exitX=0.995;exitY=0.825;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="aP3Cfx8HfI20d9rnEFOV-9" target="GNxP4Rq1OhnhySqF_HCn-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="522" y="198.5" as="sourcePoint" />
+            <mxPoint x="611" y="199.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aP3Cfx8HfI20d9rnEFOV-3" value="" style="endArrow=none;endFill=0;endSize=24;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="160" y="320" as="sourcePoint" />
+            <mxPoint x="760" y="320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="460" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aP3Cfx8HfI20d9rnEFOV-5" value="" style="endArrow=none;endFill=0;endSize=24;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="760" y="360" as="sourcePoint" />
+            <mxPoint x="760" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aP3Cfx8HfI20d9rnEFOV-6" value="" style="endArrow=none;endFill=0;endSize=24;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="440.58" y="360" as="sourcePoint" />
+            <mxPoint x="440.58" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aP3Cfx8HfI20d9rnEFOV-7" value="扇風機" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="361" y="140" width="200" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="aP3Cfx8HfI20d9rnEFOV-8" value="#スイッチ：byte" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="aP3Cfx8HfI20d9rnEFOV-7" vertex="1">
+          <mxGeometry y="26" width="200" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="aP3Cfx8HfI20d9rnEFOV-9" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="aP3Cfx8HfI20d9rnEFOV-7" vertex="1">
+          <mxGeometry y="52" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="aP3Cfx8HfI20d9rnEFOV-10" value="+ メインの操を作する(String): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="aP3Cfx8HfI20d9rnEFOV-7" vertex="1">
+          <mxGeometry y="60" width="200" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="MlRpF2pr8YVpRtB6sIoQ" name="シーケンス図">
+    <mxGraphModel dx="880" dy="1653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IjhxHUzppBeSH8chwasQ-3" value="風量" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="446" y="79" width="100" height="2631" as="geometry" />
+        </mxCell>
+        <mxCell id="IjhxHUzppBeSH8chwasQ-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="IjhxHUzppBeSH8chwasQ-3" vertex="1">
+          <mxGeometry x="45" y="1100" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="I4E5OEKhnWg4GRvP0yCX-6" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="491" y="1484" width="10" height="346" as="geometry" />
+        </mxCell>
+        <mxCell id="z99gwbU9ZawoU2V-Dmkn-1" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;" parent="1" vertex="1">
+          <mxGeometry x="30" y="80" width="20" height="2630" as="geometry" />
+        </mxCell>
+        <mxCell id="z99gwbU9ZawoU2V-Dmkn-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="z99gwbU9ZawoU2V-Dmkn-1" vertex="1">
+          <mxGeometry x="5" y="160" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="81HOCbnFtm8YGjuf9_y1-8" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="z99gwbU9ZawoU2V-Dmkn-1" vertex="1">
+          <mxGeometry x="5" y="600" width="10" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="z99gwbU9ZawoU2V-Dmkn-3" value="扇風機" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="117" y="79" width="100" height="2631" as="geometry" />
+        </mxCell>
+        <mxCell id="z99gwbU9ZawoU2V-Dmkn-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="z99gwbU9ZawoU2V-Dmkn-3" vertex="1">
+          <mxGeometry x="45" y="110" width="10" height="2170" as="geometry" />
+        </mxCell>
+        <mxCell id="IjhxHUzppBeSH8chwasQ-1" value="電源" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="285" y="79" width="100" height="2631" as="geometry" />
+        </mxCell>
+        <mxCell id="IjhxHUzppBeSH8chwasQ-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="IjhxHUzppBeSH8chwasQ-1" vertex="1">
+          <mxGeometry x="45" y="975" width="10" height="285" as="geometry" />
+        </mxCell>
+        <mxCell id="I4E5OEKhnWg4GRvP0yCX-8" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="IjhxHUzppBeSH8chwasQ-1" vertex="1">
+          <mxGeometry x="45" y="2480" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IjhxHUzppBeSH8chwasQ-5" value="タイマー" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="607" y="79" width="100" height="2631" as="geometry" />
+        </mxCell>
+        <mxCell id="IjhxHUzppBeSH8chwasQ-6" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="IjhxHUzppBeSH8chwasQ-5" vertex="1">
+          <mxGeometry x="45" y="1120" width="10" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="IjhxHUzppBeSH8chwasQ-7" value="羽根" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="767" y="79" width="100" height="2621" as="geometry" />
+        </mxCell>
+        <mxCell id="IjhxHUzppBeSH8chwasQ-8" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="IjhxHUzppBeSH8chwasQ-7" vertex="1">
+          <mxGeometry x="45" y="1147" width="10" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="6IpNeyvOo0yQNz-WjxE4-5" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="IjhxHUzppBeSH8chwasQ-7" vertex="1">
+          <mxGeometry x="45" y="1521" width="10" height="294" as="geometry" />
+        </mxCell>
+        <mxCell id="I4E5OEKhnWg4GRvP0yCX-1" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="IjhxHUzppBeSH8chwasQ-7" vertex="1">
+          <mxGeometry x="45" y="2122" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0y47AZSAL1XoMEZgoopo-1" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="10" y="150" width="1000" height="2510" as="geometry" />
+        </mxCell>
+        <mxCell id="0y47AZSAL1XoMEZgoopo-2" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;[!終了SW状態]&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="121" y="186" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0y47AZSAL1XoMEZgoopo-3" value="スイッチを押す" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="47" y="288" as="sourcePoint" />
+            <mxPoint x="160" y="288" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m8nRjdn6mDifJX-L7D6D-1" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" parent="1" vertex="1">
+          <mxGeometry x="20" y="490" width="329" height="468" as="geometry" />
+        </mxCell>
+        <mxCell id="m8nRjdn6mDifJX-L7D6D-2" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;[電源OFF]&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="131" y="566" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iE-yaS8_JCGdy1mH4K0s-1" value="電源SWを選ぶ必要" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="160" y="686" as="sourcePoint" />
+            <mxPoint x="44" y="686" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bO6Vk6zns8SR30MgM4As-1" value="スイッチに代入" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="173" y="306" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="203" y="336" />
+            </Array>
+            <mxPoint x="173" y="336" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ChgpOdPrW_7bbLY_2tV4-1" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" parent="1" vertex="1">
+          <mxGeometry x="30" y="610" width="260" height="328" as="geometry" />
+        </mxCell>
+        <mxCell id="ChgpOdPrW_7bbLY_2tV4-2" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;[!電源SW状態]&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="121" y="631" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ChgpOdPrW_7bbLY_2tV4-3" value="スイッチを押す" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="48" y="753" as="sourcePoint" />
+            <mxPoint x="158" y="753" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ChgpOdPrW_7bbLY_2tV4-4" value="スイッチに代入" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="171" y="761" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="201" y="791" />
+            </Array>
+            <mxPoint x="171" y="791" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EShJ6mX-_zgLLwn7hlxP-1" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="60" y="1000" width="920" height="1630" as="geometry" />
+        </mxCell>
+        <mxCell id="mp9bJ8Ztt0HSg848w47t-1" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;[電源SW]&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#3333FF;" parent="1" vertex="1">
+          <mxGeometry x="131" y="1020" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VEgwTOp1ede8Go00H1na-1" value="return" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;dashed=1;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="330" y="1080" as="sourcePoint" />
+            <mxPoint x="172" y="1080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8qKCtNKibCvqncSbySWY-1" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" parent="1" vertex="1">
+          <mxGeometry x="87" y="1090" width="873" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="COXw2-XJ1EivFBoxkVSo-1" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;[電源OFF]&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="121" y="1117" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2L34tnE1T6-V9yDTWy7O-1" value="電源SW状態セット(ON)" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="172" y="1157" as="sourcePoint" />
+            <mxPoint x="330" y="1157" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dDWD4bxIUGU5hcnFfVwq-1" value="風量SW状態セット(中)" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="172" y="1185" as="sourcePoint" />
+            <mxPoint x="490" y="1185" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="srDB73NjjWslmIDbLAVM-1" value="羽根の操作をする()" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="174" y="1237" as="sourcePoint" />
+            <mxPoint x="811" y="1237" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="srDB73NjjWslmIDbLAVM-3" value="羽根を風量中で回す" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="822" y="1245" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="852" y="1275" />
+            </Array>
+            <mxPoint x="822" y="1275" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XrZrYknfvUI4VeZLZ-8_-1" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="1284" width="870" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="XrZrYknfvUI4VeZLZ-8_-2" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;[電源ON]&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="131" y="1287" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QeWaGTIi_KKsl8fsgaG--1" value="電源SW状態セット(OFF)" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="171" y="1330" as="sourcePoint" />
+            <mxPoint x="329" y="1330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k1oNEgXGWM9CuPlhudFU-1" value="タイマーSW状態セット(OFF)" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="172" y="1360" as="sourcePoint" />
+            <mxPoint x="650" y="1360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="640" y="1360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l2cT11Ey_8e5cHlgXcNV-1" value="羽根の操作をする()" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="174" y="1390" as="sourcePoint" />
+            <mxPoint x="811" y="1390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l2cT11Ey_8e5cHlgXcNV-2" value="羽根を停止する" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="822" y="1400" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="852" y="1430" />
+            </Array>
+            <mxPoint x="822" y="1430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTr1EbSty8_qAl-09GON-1" value="" style="line;strokeWidth=1;fillColor=#0050ef;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#001DBC;dashed=1;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="60" y="1450" width="920" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="okodCm0LDdhWToXSfiEH-1" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;[風量SW]&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#3333FF;" parent="1" vertex="1">
+          <mxGeometry x="132" y="1457" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="okodCm0LDdhWToXSfiEH-2" value="return" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;dashed=1;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="490" y="1506" as="sourcePoint" />
+            <mxPoint x="170" y="1506" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LTo1EjI0QqldB_ofyN4D-1" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" parent="1" vertex="1">
+          <mxGeometry x="87" y="1520" width="873" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="4CqJJJCVuQ9Pb68nHavn-1" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;[風量：弱]&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="127" y="1548" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5i3kDeNX9b1GEN7vPkJq-1" value="風量SW状態セット(中)" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="173" y="1582" as="sourcePoint" />
+            <mxPoint x="491" y="1582" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="omkz7KrjynmGF264bzEO-1" value="羽根の操作をする()" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="172" y="1610" as="sourcePoint" />
+            <mxPoint x="809" y="1609.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="omkz7KrjynmGF264bzEO-2" value="羽根を風量中で回す" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="823" y="1620" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="853" y="1650" />
+            </Array>
+            <mxPoint x="823" y="1650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kjZzyy0DoiToJexNsiST-1" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;[風量：中]&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="127" y="1663" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kjZzyy0DoiToJexNsiST-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="88.5" y="1655" width="870" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="kjZzyy0DoiToJexNsiST-3" value="風量SW状態セット(強)" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="173.5" y="1700" as="sourcePoint" />
+            <mxPoint x="491.5" y="1700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kjZzyy0DoiToJexNsiST-4" value="羽根の操作をする()" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="172.5" y="1727.5" as="sourcePoint" />
+            <mxPoint x="809.5" y="1727.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kjZzyy0DoiToJexNsiST-5" value="羽根を強く回す" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="822.5" y="1738" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="852.5" y="1768" />
+            </Array>
+            <mxPoint x="822.5" y="1768" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D9P1Fpxp9gzC0Ld2rHZu-1" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="1773" width="870" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="D9P1Fpxp9gzC0Ld2rHZu-2" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;[風量：強]&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="127" y="1781" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="D9P1Fpxp9gzC0Ld2rHZu-3" value="風量SW状態セット(弱)" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="172.5" y="1820" as="sourcePoint" />
+            <mxPoint x="490.5" y="1820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D9P1Fpxp9gzC0Ld2rHZu-4" value="羽根の操作をする()" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="172.5" y="1847.5" as="sourcePoint" />
+            <mxPoint x="809.5" y="1847.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D9P1Fpxp9gzC0Ld2rHZu-5" value="羽根を弱く回す" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="822.5" y="1858" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="852.5" y="1888" />
+            </Array>
+            <mxPoint x="822.5" y="1888" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GWtNki4mmWJWr4B8ZV2o-1" value="" style="line;strokeWidth=1;fillColor=#0050ef;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#001DBC;dashed=1;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="60" y="1910" width="920" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="891SmqCNrhf2otRt12sz-1" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;[タイマーSW]&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#3333FF;" parent="1" vertex="1">
+          <mxGeometry x="121" y="1917" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="891SmqCNrhf2otRt12sz-2" value="retrun" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;dashed=1;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="652" y="1968" as="sourcePoint" />
+            <mxPoint x="170" y="1968" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ZH6LhcMNZCnBE3SnqGb-1" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" parent="1" vertex="1">
+          <mxGeometry x="88.5" y="1980" width="873" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="nNXszxc9xwVWti_CN5Pg-1" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;[タイマーOFF]&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="117" y="2010" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cu63V3xBtLH-EZu4jKLj-1" value="タイマーSW状態セット(1時間)" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="174" y="2052" as="sourcePoint" />
+            <mxPoint x="652" y="2052" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eT6bdbCq_iTeYV9UIdcU-1" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;[タイマー1時間]&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="112" y="2078" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eT6bdbCq_iTeYV9UIdcU-2" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="88.5" y="2066" width="870" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="eT6bdbCq_iTeYV9UIdcU-3" value="タイマーSW状態セット(2時間)" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="175" y="2120" as="sourcePoint" />
+            <mxPoint x="653" y="2120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eT6bdbCq_iTeYV9UIdcU-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="2134" width="870" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="eT6bdbCq_iTeYV9UIdcU-5" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;[タイマー2時間]&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="112" y="2142" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eT6bdbCq_iTeYV9UIdcU-6" value="タイマーSW状態セット(OFF)" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="175" y="2184" as="sourcePoint" />
+            <mxPoint x="653" y="2184" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vNdIQxm9m03cO3Iur1qG-1" value="return" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;dashed=1;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="653" y="2316" as="sourcePoint" />
+            <mxPoint x="171" y="2316" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3j6VVbkGAU9uZwYFIUfT-1" value="タイマー設定()" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="174" y="2339" as="sourcePoint" />
+            <mxPoint x="652" y="2339" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_nT6dW86LMEU05GntzfJ-1" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" parent="1" vertex="1">
+          <mxGeometry x="310" y="2391" width="630" height="209" as="geometry" />
+        </mxCell>
+        <mxCell id="AJKgPSB1hqqg1Du1ccM8-1" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;[残り時間：0]&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="611.5" y="2407" width="91" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="RwuNlXIkHkqGrCKBbu_q-1" value="タイマーSW状態&lt;br&gt;セット(OFF)" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="663" y="2437" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="693" y="2467" />
+            </Array>
+            <mxPoint x="663" y="2467" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jHEpnmRk5FE_bIpELHjL-1" value="羽根の操作をする()" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="662" y="2496" as="sourcePoint" />
+            <mxPoint x="812" y="2497" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jHEpnmRk5FE_bIpELHjL-2" value="羽根を停止する" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="823" y="2508" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="853" y="2538" />
+            </Array>
+            <mxPoint x="823" y="2538" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FyoLH3QWeiA1Iqw3-Ob4-1" value="羽根の操作をする()" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="174.5" y="2214" as="sourcePoint" />
+            <mxPoint x="811.5" y="2214" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FyoLH3QWeiA1Iqw3-Ob4-2" value="羽根を停止する" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="822" y="2223" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="852" y="2253" />
+            </Array>
+            <mxPoint x="822" y="2253" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FyoLH3QWeiA1Iqw3-Ob4-3" value="電源SW状態セット(OFF)" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="651" y="2570" as="sourcePoint" />
+            <mxPoint x="340" y="2570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6IpNeyvOo0yQNz-WjxE4-1" value="スイッチを&lt;br&gt;選んでください" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="161" y="254" as="sourcePoint" />
+            <mxPoint x="45" y="254" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6IpNeyvOo0yQNz-WjxE4-2" value="タイマーSW状態セット(OFF)" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="175" y="1211" as="sourcePoint" />
+            <mxPoint x="653" y="1211" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="643" y="1211" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6IpNeyvOo0yQNz-WjxE4-3" value="タイマー処理" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="663" y="2346" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="693" y="2376" />
+            </Array>
+            <mxPoint x="663" y="2376" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I4E5OEKhnWg4GRvP0yCX-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="812" y="2490" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I4E5OEKhnWg4GRvP0yCX-3" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="652" y="1940" width="10" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="I4E5OEKhnWg4GRvP0yCX-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="652" y="2290" width="10" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="I4E5OEKhnWg4GRvP0yCX-5" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="652" y="2433" width="10" height="147" as="geometry" />
+        </mxCell>
+        <mxCell id="81HOCbnFtm8YGjuf9_y1-1" value="" style="shape=umlDestroy;whiteSpace=wrap;html=1;strokeWidth=3;targetShapes=umlLifeline;" parent="1" vertex="1">
+          <mxGeometry x="642" y="2690" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="81HOCbnFtm8YGjuf9_y1-2" value="" style="shape=umlDestroy;whiteSpace=wrap;html=1;strokeWidth=3;targetShapes=umlLifeline;" parent="1" vertex="1">
+          <mxGeometry x="802" y="2690" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="81HOCbnFtm8YGjuf9_y1-4" value="" style="shape=umlDestroy;whiteSpace=wrap;html=1;strokeWidth=3;targetShapes=umlLifeline;" parent="1" vertex="1">
+          <mxGeometry x="320" y="2690" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="81HOCbnFtm8YGjuf9_y1-5" value="" style="shape=umlDestroy;whiteSpace=wrap;html=1;strokeWidth=3;targetShapes=umlLifeline;" parent="1" vertex="1">
+          <mxGeometry x="152" y="2690" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="81HOCbnFtm8YGjuf9_y1-7" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;ユーザー&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="10" y="110" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3IFppC78YXa97JhC18Ju-1" value="電源SW状態ゲット()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=1;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="173" y="1060" as="sourcePoint" />
+            <mxPoint x="331" y="1060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3IFppC78YXa97JhC18Ju-2" value="風量SW状態ゲット()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=1;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="171" y="1487" as="sourcePoint" />
+            <mxPoint x="491" y="1487" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3IFppC78YXa97JhC18Ju-3" value="タイマーSW状態ゲット()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=1;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="173" y="1948" as="sourcePoint" />
+            <mxPoint x="650" y="1948" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3IFppC78YXa97JhC18Ju-4" value="タイマーSW状態ゲット()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=1;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="173" y="2294" as="sourcePoint" />
+            <mxPoint x="650" y="2294" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tQg3xRklriAz-jgN85IK-1" value="return" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;dashed=1;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="330" y="554" as="sourcePoint" />
+            <mxPoint x="172" y="554" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tQg3xRklriAz-jgN85IK-2" value="電源SW状態ゲット()" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=1;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="173" y="529" as="sourcePoint" />
+            <mxPoint x="331" y="529" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tQg3xRklriAz-jgN85IK-3" value="" style="shape=umlDestroy;whiteSpace=wrap;html=1;strokeWidth=3;targetShapes=umlLifeline;" parent="1" vertex="1">
+          <mxGeometry x="25" y="2690" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tQg3xRklriAz-jgN85IK-4" value="" style="shape=umlDestroy;whiteSpace=wrap;html=1;strokeWidth=3;targetShapes=umlLifeline;" parent="1" vertex="1">
+          <mxGeometry x="481" y="2690" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="81mA3bwHDV4iS2C2IS28-1" value="コーディング&lt;br&gt;True=&amp;gt;電源ON&lt;br&gt;False=&amp;gt;電源OFF" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="285" y="-62" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="LGyVJgMadx6v9k-GI73b-1" value="コーディング&lt;br&gt;1=&amp;gt;風量弱&lt;br&gt;2=&amp;gt;風量中&lt;br&gt;3=&amp;gt;風量強" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="446" y="-62" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="CNbhXU9Qdz4sycGeKIXm-1" value="コーディング&lt;br&gt;0=&amp;gt;タイマーOFF&lt;br&gt;1=&amp;gt;タイマー１時間&lt;br&gt;2=&amp;gt;タイマー2時間&lt;br&gt;3=&amp;gt;タイマーリセット" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="592.75" y="-62" width="128.5" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="CNbhXU9Qdz4sycGeKIXm-2" value="コーディング&lt;br&gt;1=&amp;gt;電源SW状態&lt;br&gt;2=&amp;gt;風量SW状態&lt;br&gt;3=&amp;gt;タイマーSW状態&lt;br&gt;4=&amp;gt;終了SW状態" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="102.75" y="-62" width="128.5" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="CNbhXU9Qdz4sycGeKIXm-3" value="" style="endArrow=none;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="317" y="80" as="sourcePoint" />
+            <mxPoint x="305.58695652173924" y="38" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="317" y="80" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNbhXU9Qdz4sycGeKIXm-4" value="" style="endArrow=none;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="142" y="80" as="sourcePoint" />
+            <mxPoint x="131" y="38" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="142" y="80" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CNbhXU9Qdz4sycGeKIXm-5" value="" style="endArrow=none;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="481.40999999999997" y="79" as="sourcePoint" />
+            <mxPoint x="469.9969565217392" y="37" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="481.40999999999997" y="79" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DvKtGPbQgATExj-5-LL0-1" value="" style="endArrow=none;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="642" y="80" as="sourcePoint" />
+            <mxPoint x="630.5869565217392" y="38" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="642" y="80" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Mv8ezg9mVLJP_SaRS8d-1" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;fillColor=#CC99FF;" parent="1" vertex="1">
+          <mxGeometry x="80" y="354" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="3Mv8ezg9mVLJP_SaRS8d-2" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;[終了SW状態]&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="116" y="384" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3Mv8ezg9mVLJP_SaRS8d-3" value="exit" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="173.5" y="414" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="203.5" y="444" />
+            </Array>
+            <mxPoint x="173.5" y="444" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Mv8ezg9mVLJP_SaRS8d-4" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;strokeColor=#000000;fillColor=#B266FF;" parent="1" vertex="1">
+          <mxGeometry x="87" y="808" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="3Mv8ezg9mVLJP_SaRS8d-5" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;[終了SW状態]&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="123" y="838" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3Mv8ezg9mVLJP_SaRS8d-6" value="exit" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="172.5" y="868" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="202.5" y="898" />
+            </Array>
+            <mxPoint x="172.5" y="898" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Mv8ezg9mVLJP_SaRS8d-7" value="スイッチを&lt;br&gt;選んでください" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endFill=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="160" y="725" as="sourcePoint" />
+            <mxPoint x="44" y="725" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P884ikDjp8S6HtuyjKLc-1" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="330" y="514" width="10" height="56" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
